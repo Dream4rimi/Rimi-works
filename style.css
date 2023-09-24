@@ -1,0 +1,490 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+/* Common styles for both desktop and mobile */
+body {
+    font-family: Arial, sans-serif;
+    /* Add other common styles here */
+}
+
+/* Styles for desktop screens */
+@media (min-width: 601px) {
+    /* Add styles specific to desktop screens here */
+}
+
+/* Styles for mobile screens */
+@media (max-width: 600px) {
+    /* Add styles specific to mobile screens here */
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+}
+:root{
+    --primary:indianred;
+    --secondary:rgba(15,10,29,0.849);
+    --light:#2f3640;
+}
+header{
+    width: 100%;
+    height: 100vh;
+}
+/*nav1 starts*/
+.nav1{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    box-shadow: 2px 0px 3px grey;
+    text-align: center;
+    
+}
+.nav1 .left{
+    flex-basis: 50%;
+    letter-spacing: 2px;
+
+}
+.nav1 .left a{
+    text-decoration: none;
+    color: var(--primary);
+    font-weight: bold;
+    margin: 0px 5px;
+}
+.nav1 .right{
+    flex-basis: 50%;
+}
+.nav1 .right i{
+    font-size: 20px;
+    margin: 0px 15px;
+    background: var(--primary);
+    color: white;
+    padding: 8px;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+.nav1 .right i:hover{
+    transform: rotate(360deg);
+
+}
+/*nav2 ends*/
+/*-----------------------------------------*/
+/*nav2 starts*/
+.nav2{
+    width: 100%;
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    
+    box-shadow: 2px 0px 3px grey;
+    
+}
+.nav2 .nav2left, .nav2 .nav2right, .nav2 .nav2center{
+    flex-basis: 30%;
+    margin: auto;
+    cursor: pointer;
+
+}
+.nav2 .nav2left i{
+    margin: 15px;
+
+}
+.nav2 .nav2left a{
+    text-decoration: none;
+    color: black;
+}
+.nav2 .nav2left a:hover{
+    color: var(--primary);
+}
+.nav2 .nav2left i:hover{
+    color: var(--primary);
+}
+.nav2 .nav2center h1{
+color: var(--primary);
+font-size: 2rem;
+letter-spacing: 5px;
+font-weight: bold;
+}
+.nav2 .nav2center h1 span{
+    color: var(--secondary);
+}
+.nav2 .nav2center p{
+    color: grey;
+    font-size: 15px;
+    margin: 5px;
+}
+.nav2 .nav2right i {
+    margin: 0px 5px;
+}
+.nav2 .nav2right a{
+    text-decoration: none;
+    color: black;
+}
+.nav2 .nav2right a:hover{
+    color: var(--primary);
+}
+/*nav2 ends*/
+ /*---------------------------------------------*/
+ /*nav3 starts*/
+
+.nav3{
+    width: 100%;
+    height: 90px;
+    line-height: 70px;
+    box-shadow: 2px 0px 3px grey;
+    background-color: rgb(236, 214, 214,0.9);
+}
+.nav3 ul{
+    list-style: none;
+    text-align: center;
+
+}
+.nav3 ul li{
+    display: inline-block;
+    width: 150px;
+    position: relative;
+    z-index: 99;
+}
+.nav3 ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    display: block;
+}
+.nav3 ul li a:hover{
+    color: var(--primary);
+}
+.nav3 ul li i{
+    color: var(--primary);
+    margin: 0px 5px;
+}
+.nav3 ul ul {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    display: none;
+}
+.nav3 ul ul li{
+    background-color: white;
+    border-bottom: 1px solid var(--primary);
+}
+.nav3 ul li:hover>ul{
+    display: block;
+
+}
+/* nav3 ends */
+/*------------------------------------------------*/
+/*featured section starts*/
+
+.featured{
+    width: 100%;
+    height: 60vh;
+    background:linear-gradient(to right,rgba(0,0,0,0.8) 20%,rgba(255,255,255,0.2)), url(images/sapphire1.jpg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    
+}
+
+
+.featured-text{
+    max-width: 500px;
+    position: absolute;
+    top:50%;
+    left:10%;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 2rem;
+    letter-spacing: 5px;
+    font-family: 'Akaya Kanadaka', cursive;
+}
+
+.featured-text button{
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    background-color: var(--primary);
+    margin: 20px 0px;
+    color: white;
+    border-radius: 5px;
+    width: 200px;
+    font-size: 1rem;
+}
+/*featured section ends*/
+
+/*-------------------------------------*/
+
+/*latest section starts*/
+
+
+.latest{
+    padding: 50px 100px;
+    box-shadow: 2px 0px 3px grey;
+    
+}
+
+.product-intro h1{
+    color: var(--primary);
+    letter-spacing: 2rem;
+    font-weight: bolder;
+    font-size: 2rem;
+    
+
+}
+.product-intro{
+    text-align: center;
+    
+}
+.product-intro h1 span{
+    color: var(--secondary);
+}
+.product-intro p{
+    color: grey;
+    margin: 15px 0px;
+}
+.card-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    margin: 4rem 0;
+
+}
+.card-container .card{
+    flex-basis: 20%;
+    padding: 0.8rem;
+    position: relative;
+}
+.card img {
+    width: 100%;
+    transition: 0.5s ease-in-out;
+}
+.card i{
+    color: goldenrod;
+    margin: 10px 0px;
+}
+.card button{
+    color: white;
+    background-color: var(--secondary);
+    border: none;
+    outline: none;
+    margin-top: 15px;
+    padding: 5px 20px;
+}
+.card:hover img, .card:hover h1{
+    width: 80%;
+    color: var(--primary);
+}
+.card::before{
+    content: '20% off';
+    width: 25%;
+    height:25px;
+    line-height: 25px;
+    color: white;
+    position: absolute;
+    top:0;
+    left:0;
+    background-color: var(--primary);
+    padding: 0px 4px;
+    transform: rotate(-20deg);
+}
+.card-container .card p1{
+    text-align: center;
+    align-items: center;
+    margin: 9px;
+}
+.card-container .card p1:hover{
+    color: darkgrey;
+}
+.card-container .card p:hover{
+    color: lightslategrey;
+}
+/*latest section ends*/
+
+/*------------------------------------------------------*/
+
+/*trends section starts*/
+.trend-container{
+    width: 100%;
+    height: 90vh;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 10px grey;
+    margin-top: 50px;
+    padding: 0%;
+    margin-bottom: 0px;
+    
+}
+.trends h1{
+    color: var(--primary);
+    letter-spacing: 2rem;
+    font-weight: bolder;
+    font-size: 2rem;
+    justify-content: center; 
+    text-align: center;
+    padding: 10px;
+    font-size: 2rem;
+    letter-spacing: 5px;
+    font-family: sans-serif;
+    margin-top: 50px;
+    cursor: pointer;
+    
+    
+    
+}
+
+.swiper-wrapper{
+    width: 100%;
+    height: 105vh;
+    box-shadow: 2px 0px 3px grey;
+}
+.swiper{
+    width: 80%;
+    height: fit-content;
+}
+.swiper-slide img{
+    width: 100%;
+    height: 90vh;
+
+}
+.swiper .swiper-button-prev, .swiper .swiper-button-prev{
+  color: white;  
+}
+.swiper .swiper-pagination-bullet-active{
+    background: white;
+}
+
+/*trends section ends*/
+/*-----------------------------*/
+
+/*about us section*/
+.about h1{
+    font-size: 50px;
+    color: var(--primary);
+    letter-spacing: 1%;
+    
+}
+.about h1:hover{
+    color: rgb(207, 109, 109);
+}
+
+.about{
+    width: 100%;
+    height: 80vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    justify-content: space-around;
+    align-items: center;
+    font-family: sans-serif;
+    box-shadow: 2px 0px 3px grey;
+    text-align: center;
+    padding: 120px 70px;
+    margin: 0% 0%;
+    letter-spacing: 5%; 
+    
+}
+.about img{
+  background: grey(rgba(0,0,0,0.8) 20%,rgba(255,255,255,0.2));
+  padding: 20px;
+}
+
+.about p{
+    letter-spacing: 1%;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0px 50px;
+    color: dark black;
+    margin: auto;
+}
+.about p:hover{
+    color: rgb(36, 33, 33);
+}
+.about img{
+    float:right;
+    height:120%;
+    width: 35%;
+    display: flex;
+margin: auto;
+text-align: center;
+padding-top: 20px;
+background-repeat: no-repeat;
+color:linear-gradient(rgba(0,0,0,0.8) 20%,rgba(255,255,255,0.2)) ;
+border-radius:  15px 15px;
+
+}
+.about-button{
+padding: 20px 40px;
+display: inline-block;
+text-decoration: none;
+color:white;
+border: 1px solid var(--primary);
+
+font-size: 16px;
+background: var(--primary);
+position: relative;
+cursor: pointer;
+padding-top: 5px;
+width: 12%;
+border-radius: 10px;
+margin-top: 1%;
+height: 50px;
+padding-bottom: 15px; 
+}
+.about-button:hover{
+border: 1px solid var(--light);
+background: var(--light);
+transition: 1s;
+}
+/*about us section*/
+
+/*-------------------------*/
+
+/*footer section starts*/
+
+
+.footer{
+    background-color: var(--secondary);
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  .footer div{
+    flex-basis: 30%;
+    padding: 2rem;
+  }
+  .footer h1{
+    letter-spacing: 0.5rem;
+
+  }
+  .footer span{
+    color: var(--primary);
+  }
+  .footer p{
+    font-size: 1rem;
+  }
+  .footer i{
+    margin: 0px 5px;
+
+  }
+
+/*footer section starts*/
+
+/*------------------------------------------*/
+
